@@ -21,20 +21,15 @@ var HEADBAND = {
           HEADBAND.band.stop().animate({'top' : top.toString() + 'px'}, 250);
         }
       });
-      //HEADBAND.band.append(stripe.css('height', stripe_height.toString() + 'px'));
-      var row_div = $('<div/>', {
-        class: 'headband_row',
-      });
-      HEADBAND.band.append(row_div.append(stripe.css('height', stripe_height.toString() + 'px')));
+      var row = $('<div/>', { class: 'headband_row' });
+      HEADBAND.band.append(row.append(stripe.css('height', stripe_height.toString() + 'px')));
     }
     
-    var stripe_div = $('<div/>', {
-      class: 'headband_stripe',
-    });
-    $(stripe_div).append(notice);
+    var stripe = $('<div/>', { class: 'headband_stripe' });
+    $(stripe).append(notice);
     if (style) {
-      $(stripe_div).css(style);
+      $(stripe).css(style);
     }
-    addToBand(stripe_div, height_px || 24);
+    addToBand(stripe, height_px || 24);
   }
 }
