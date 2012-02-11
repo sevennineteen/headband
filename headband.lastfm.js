@@ -1,4 +1,6 @@
-/* 
+/**
+* @depends headband.js
+* 
 * Last.fm HEADBAND plugin.
 * Adds stripe to headband if user is currently scrobbling on last.fm
 * e.g., 'Right now, sevennineteen is listening to "20 Miles Up" by Tarwater.'
@@ -44,4 +46,4 @@ HEADBAND.LASTFM = {
     HEADBAND.addStripe(track_notice, {'background': '#D51007', 'color': '#FFF'});
     callback();
   }
-}
+};

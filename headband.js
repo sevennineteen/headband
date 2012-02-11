@@ -32,4 +32,4 @@ var HEADBAND = {
     }
     addToBand(stripe, height_px || 24);
   }
-}
+};
