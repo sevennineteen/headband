@@ -1,0 +1,32 @@
+#headband {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.headband_row {
+    display: table;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.headband_stripe {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    color: white;
+    background: black;
+    text-align: center;
+}
+
+.headband_link {
+    background: inherit;
+    text-decoration: underline;
+}
+.headband_link:hover {
+    background: inherit;
+    text-decoration: underline;
+}
